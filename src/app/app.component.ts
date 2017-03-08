@@ -3,10 +3,13 @@ import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { HomePage } from '../pages/home/home';
-
+import {PostComponent} from '../post.component';
+import {PostService} from '../post.service';
+import {Http,HttpModule} from '@angular/http'
 
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'app.html',
+  providers: [PostService]
 })
 export class MyApp {
   rootPage = HomePage;
