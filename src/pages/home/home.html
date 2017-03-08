@@ -14,9 +14,48 @@
   <posts></posts>
 </ion-content>-->
 
-<table>
+<!--<table>
   <tr *ngFor="let post of posts">
     <td><posts [value]="post.Value1" title='Hello'></posts></td>   
-    <td><posts [value]="post.Value2" title='Hello'></posts></td>
-  </tr>
-</table>
+    <td style="margin-left:20px"><posts [value]="post.Value2" title='Hello'></posts></td>
+  </tr> 
+</table>-->
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-card *ngFor="let post of posts">
+        <ion-card-content text-center>
+
+            <posts [value]="post.Value1" title='SpO2 %' ></posts>
+            <posts class="marginLeft" [value]="post.Value2" title='PR/min' ></posts>
+            
+        </ion-card-content>
+    </ion-card>
+
+    <!--<ion-list *ngFor="let post of posts" >
+     <ion-item  >-->
+
+         <!--<ion-card *ngFor="let post of posts">
+            <ion-card-content text-center>-->
+          
+            <!--<posts [value]="post.Value1" title='SpO2 %' ></posts>
+            <posts class="marginLeft" [value]="post.Value2" title='PR/min' ></posts>-->
+            
+            <!--</ion-card-content>-->
+    <!--</ion-card>-->
+            
+    <!--</ion-item>
+  </ion-list>-->
+
+</ion-content>
+
+    
+
+

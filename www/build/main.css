@@ -24386,3 +24386,11 @@ ion-navbar.toolbar {
     padding-top: calc(16px + 20px);
   }
 }
+
+.list-ios {
+  margin: -1px 0 0px 0;
+}
+
+.marginLeft {
+  margin-left: 30px;
+}

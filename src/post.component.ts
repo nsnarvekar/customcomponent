@@ -1,15 +1,27 @@
-import {Component} from '@angular/core';
+import {Component,ViewEncapsulation} from '@angular/core';
 import {PostService} from './post.service';
 import {Post} from './post'
 @Component({
     selector: 'posts',
     inputs:['value','title'],
-    template: `<div>
-                    <h2>{{title}}</h2>
-                    <h2> {{value}}</h2>
-                    </div>
-                
-    `
+    template: `<div style="display:inline-block">
+                    <label class = "labelText" >{{title}}</label>
+                    <label class = "valueText" >{{value}}</label>
+                </div>         
+    `,
+    styles:[`
+.labelText {
+    text-align:center;
+    font-size: 18px;
+    display: block;
+    font-weight: normal !important;}
+.valueText {
+        text-align:center;
+        display: block;
+        font-size: 30px 
+    }
+    `],
+    encapsulation: ViewEncapsulation.None
 })
 
 export class PostComponent

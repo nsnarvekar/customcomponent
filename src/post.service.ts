@@ -22,6 +22,33 @@ export class PostService{
             {
                 Value1:34.2,
                 Value2:64.32
+            },
+            {
+                Value1:34.2,
+                Value2:64.32
+            },{
+                Value1:34.2,
+                Value2:64.32
+            },
+            {
+                Value1:34.2,
+                Value2:64.32
+            },
+            {
+                Value1:34.2,
+                Value2:64.32
+            },
+            {
+                Value1:34.2,
+                Value2:64.32
+            },
+            {
+                Value1:34.2,
+                Value2:64.32
+            },
+            {
+                Value1:34.2,
+                Value2:64.32
             }
             ]
 
