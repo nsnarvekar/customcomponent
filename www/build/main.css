@@ -24394,3 +24394,11 @@ ion-navbar.toolbar {
 .marginLeft {
   margin-left: 30px;
 }
+
+.colorGReen {
+  background-color: green;
+}
+
+.my-class {
+  background-color: yellow;
+}

@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+ <div style="text-align: center;" >
+              <h2> MDH PoC Application</h2>
+
+            <div style="margin-top:40px">
+              <label *ngIf="isWeb" style="font-size:14px;font-weight:bold">Username</label>
+              <input style="margin-left:10px;border: 1px solid #000000;color:black;background-color: white;border-radius: 4px;" type="text" placeholder="{{isWeb?'':'Username' }}">
+            </div>
+            <div style="margin-top:10px">
+              <label *ngIf="isWeb" style="margin-top:10px;font-size:14px;font-weight:bold">Password</label>
+              <input style="margin-left:10px;border: 1px solid #000000;color:black;background-color: white;border-radius: 4px;" type="password" placeholder="{{isWeb?'':'Password' }}">
+            </div>
+
+            <div style="margin-top:25px">
+                <button *ngIf="isWeb" style="border: 2px solid #000000;padding: 10px;padding-left: 25px;padding-right: 25px;font-size:14px;color:black;background-color: white;border-radius: 4px;">Cancel</button>
+                <button style="margin-left:40px;padding: 10px;;padding-left: 25px;padding-right: 25px;font-size:14px;color:white;border-radius: 4px;">Login</button>
+            </div>
+</div>
+</ion-content>

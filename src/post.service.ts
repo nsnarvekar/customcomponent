@@ -16,6 +16,8 @@ export class PostService{
     {
         this.posts = [
             {
+                Room:1,
+                Name:'Sanket, Pandya',
                 Value1:34.2,
                 Value2:64.32
             },

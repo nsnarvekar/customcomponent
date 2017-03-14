@@ -4,20 +4,25 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import {PostComponent} from '../post.component'
 import {PostService} from '../post.service'
+import {Ng2DeviceDetector} from 'ng2-device-detector';
+import {LoginPage} from '../pages/login/login';
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    PostComponent
+    PostComponent,LoginPage
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    Ng2DeviceDetector
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    PostComponent
+    PostComponent,
+    LoginPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

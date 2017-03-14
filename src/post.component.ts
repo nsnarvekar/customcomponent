@@ -1,10 +1,10 @@
-import {Component,ViewEncapsulation} from '@angular/core';
+import {Component,ViewEncapsulation,Output,EventEmitter} from '@angular/core';
 import {PostService} from './post.service';
 import {Post} from './post'
 @Component({
     selector: 'posts',
     inputs:['value','title'],
-    template: `<div style="display:inline-block">
+    template: `<div style="display:inline-block" (click)="sendNotification()">
                     <label class = "labelText" >{{title}}</label>
                     <label class = "valueText" >{{value}}</label>
                 </div>         
@@ -34,5 +34,11 @@ export class PostComponent
     //     //     this.posts = posts;
     //     // })
     // }
+
+    @Output() notifyParent: EventEmitter<any> = new EventEmitter();
+    sendNotification() {
+        console.log("Child")
+        this.notifyParent.emit('Some value to send to the parent');
+    }
 
 }

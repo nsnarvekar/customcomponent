@@ -31,25 +31,28 @@
 
 <ion-content>
     <ion-card *ngFor="let post of posts">
+       <div style="display:inline-block;margin :10px">
+              <label  >Room 1 </label>
+              <label >Sanket, Pandya</label>
+        </div>
         <ion-card-content text-center>
 
-            <posts [value]="post.Value1" title='SpO2 %' ></posts>
+        <p>
+            <posts [value]="post.Value1" title='SpO2 %' (notifyParent)="getNotification($event)"></posts>
             <posts class="marginLeft" [value]="post.Value2" title='PR/min' ></posts>
-            
+          
+        </p>
         </ion-card-content>
     </ion-card>
 
     <!--<ion-list *ngFor="let post of posts" >
      <ion-item  >-->
 
-         <!--<ion-card *ngFor="let post of posts">
-            <ion-card-content text-center>-->
+        
           
             <!--<posts [value]="post.Value1" title='SpO2 %' ></posts>
             <posts class="marginLeft" [value]="post.Value2" title='PR/min' ></posts>-->
             
-            <!--</ion-card-content>-->
-    <!--</ion-card>-->
             
     <!--</ion-item>
   </ion-list>-->
